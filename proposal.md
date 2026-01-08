@@ -25,17 +25,17 @@ A raiz de la necesidad de minimizar la cantidad de vehículos que circulan en el
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo estadía<br>2. CRUD Lugar<br>3. CRUD Localidad<br>4. CRUD Cliente|
-|CRUD dependiente|1. CRUD Vehiculo {depende de} CRUD Cliente<br>2. CRUD Cochera {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado mensual de reservas filtrado por cochera, muestra el cuit de la cochera, el mes al que corresponde y cantidad de reversas de ese mes, => detalle CRUD Reserva<br> 2. Listado de reservas filtrado por cliente en un rango de fecha, muestra cuit de las cocheras en las que se registró una reserva y datos de dicha reserva => detalle muestra datos completos de la reserva|
+|CRUD simple|1. CRUD Tipo estadía<br>2. CRUD Lugar<br>3. CRUD Localidad<br>4. CRUD Usuario|
+|CRUD dependiente|1. CRUD Vehiculo {depende de} CRUD Usuario<br>2. CRUD Cochera {depende de} CRUD Localidad|
+|Listado<br>+<br>detalle| 1. Listado mensual de reservas filtrado por cochera, muestra el cuit de la cochera, el mes al que corresponde y cantidad de reversas de ese mes, => detalle CRUD Reserva<br> 2. Listado de reservas filtrado por usuario en un rango de fecha, muestra cuit de las cocheras en las que se registró una reserva y datos de dicha reserva => detalle muestra datos completos de la reserva|
 |CUU/Epic|1. Registrar reserva<br>2. Dar de baja reserva
 
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Tipo estadía<br>2. CRUD Vehículo<br>3. CRUD Localidad<br>4. CRUD Cliente<br>5. CRUD Reserva<br>6. CRUD Lugar<br>7. CRUD Cochera<br> 8. CRUD Tipo vehiculo<br>9. CRUD Cochera-TipoVehiculo<br>|
-|CUU/Epic|1. Reservar estadía<br>2. Registrar usuario<br>3. Cancelar reserva<br>4. Realizar pago|
+|CRUD |1. CRUD Tipo estadía<br>2. CRUD Vehículo<br>3. CRUD Localidad<br>4. CRUD Usuario<br>5. CRUD Reserva<br>6. CRUD Lugar<br>7. CRUD Cochera<br> 8. CRUD Tipo vehiculo<br>|
+|CUU/Epic|1. Solicitar servicios<br>2. Realizar pago|
 
 
 ### Alcance Adicional Voluntario
@@ -43,6 +43,5 @@ Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
 |Listados | 1. Listado mensual de reservas canceladas. |
-|CUU/Epic|1. Solicitar servicios|
 |Otros|1. Envío de recordatorio de reserva por email|
 
